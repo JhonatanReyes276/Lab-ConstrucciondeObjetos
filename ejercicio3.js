@@ -4,7 +4,7 @@ function Estudiante(nombre, edad, curso, aprobado) {
     this.curso = curso;
     this.aprobado = aprobado;
     this.mostrarResultado = function() {
-        return `Resultado: ${this.aprobado}`;
+        return `${this.nombre} - Aprobado: ${this.aprobado}`;
     };
 
     if (aprobado >= 3.0) {
@@ -21,9 +21,9 @@ const e2 = new Estudiante("Lucia", 10, "Quinto", 2.9);
 const e3 = new Estudiante("Diego", 8, "Tercero", 4.0);
 const e4 = new Estudiante("Mariana", 12, "Septimo", 3.6);
 
-console.log(e1);
-console.log(e2);
-console.log(e3);
-console.log(e4);
+console.log(e1.mostrarResultado());
+console.log(e2.mostrarResultado());
+console.log(e3.mostrarResultado());
+console.log(e4.mostrarResultado());
 
 
