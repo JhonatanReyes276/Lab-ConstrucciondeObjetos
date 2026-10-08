@@ -1,10 +1,8 @@
-let prestado = false
-
 function Libro(nombre, año, autor, prestado) {
     this.nombre = nombre;
     this.año = año;
     this.autor = autor; 
-    this.prestado = prestado
+    this.prestado = false;
     this.prestar = function() {
         if (prestado === "no") {
             this.prestado = true;
@@ -26,7 +24,7 @@ function Libro(nombre, año, autor, prestado) {
     }
 }
 
-const l1 = new Libro("100 años de soledad", 1967, "Gabo", "no");
+const l1 = new Libro("Hush, hush", 2009, "Becca Fitzpatrick", "si");
 
 console.log(l1.prestar());
 console.log(l1.devolver());
